@@ -15,8 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Generate a Silly Song!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOs-fp-mUD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generate a Silly Song!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOs-fp-mUD">
                                 <rect key="frame" x="20" y="131" width="374" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="FSG-L4-aTE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -26,13 +29,9 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DEv-38-dnA">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DEv-38-dnA">
                                 <rect key="frame" x="87" y="271" width="240" height="188"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="188" id="EBc-ox-cJ7"/>
-                                    <constraint firstAttribute="width" constant="240" id="G03-M7-yhz"/>
-                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
@@ -41,18 +40,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Adm-5B-kZp" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.57971" id="0a8-h2-Y9r"/>
-                            <constraint firstItem="aOs-fp-mUD" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.903382" id="168-5K-KLe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aOs-fp-mUD" secondAttribute="trailing" constant="20" id="2VG-DD-US9"/>
-                            <constraint firstItem="aOs-fp-mUD" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.0831296" id="C6M-0j-yI3"/>
-                            <constraint firstItem="Adm-5B-kZp" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.0379464" id="QUH-ZS-uLG"/>
-                            <constraint firstItem="aOs-fp-mUD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="Uru-4S-w3Z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Adm-5B-kZp" secondAttribute="trailing" constant="87" id="crN-1F-wiA"/>
-                            <constraint firstItem="Adm-5B-kZp" firstAttribute="top" secondItem="aOs-fp-mUD" secondAttribute="bottom" constant="8" id="eUT-hS-NrS"/>
-                            <constraint firstItem="Adm-5B-kZp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="fOK-Xo-QM6"/>
-                            <constraint firstItem="aOs-fp-mUD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gqQ-m8-0jz"/>
-                            <constraint firstItem="aOs-fp-mUD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pQc-0B-juc"/>
-                            <constraint firstItem="Adm-5B-kZp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="r6a-p4-jqf"/>
+                            <constraint firstItem="aOs-fp-mUD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="0zH-oe-6Du"/>
+                            <constraint firstItem="DEv-38-dnA" firstAttribute="top" secondItem="Adm-5B-kZp" secondAttribute="bottom" constant="27" id="Lyt-Ns-Grn"/>
+                            <constraint firstItem="aOs-fp-mUD" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="XRt-X4-RR4"/>
+                            <constraint firstItem="Adm-5B-kZp" firstAttribute="top" secondItem="aOs-fp-mUD" secondAttribute="bottom" constant="10" id="aYa-GE-bgX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DEv-38-dnA" secondAttribute="bottom" constant="403" id="de4-sz-MsK"/>
+                            <constraint firstItem="aOs-fp-mUD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="eNE-RK-Epp"/>
+                            <constraint firstItem="Adm-5B-kZp" firstAttribute="trailing" secondItem="DEv-38-dnA" secondAttribute="trailing" id="lOe-4G-UPn"/>
+                            <constraint firstItem="Adm-5B-kZp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="rRw-hR-dI2"/>
+                            <constraint firstItem="aOs-fp-mUD" firstAttribute="centerX" secondItem="Adm-5B-kZp" secondAttribute="centerX" id="vCc-hr-eoo"/>
+                            <constraint firstItem="Adm-5B-kZp" firstAttribute="leading" secondItem="DEv-38-dnA" secondAttribute="leading" id="vKU-sf-Hrl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
